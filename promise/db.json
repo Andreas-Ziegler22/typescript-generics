@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "name": "daniel",
+      "id": 1,
+      "email": "daniel@server.com"
+    },
+    {
+      "name": "maria",
+      "id": 2,
+      "email": "maria@server.com"
+    },
+    {
+      "name": "joao",
+      "id": 3,
+      "email": "joao@server.com"
+    },
+    {
+      "name": "joana",
+      "email": "daniel@server",
+      "id": 4
+    },
+    {
+      "name": "Milton",
+      "email": "daniel@server",
+      "id": 5
+    },
+    {
+      "name": "Milton",
+      "email": "daniel@server",
+      "id": 6
+    },
+    {
+      "name": "Milton",
+      "email": "daniel@server",
+      "id": 7
+    },
+    {
+      "name": "Milton",
+      "email": "daniel@server",
+      "id": 8
+    },
+    {
+      "name": "Milton",
+      "email": "daniel@server",
+      "id": 9
+    }
+  ]
+}

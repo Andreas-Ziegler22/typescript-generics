@@ -1,0 +1,16 @@
+{
+  "name": "secao29-typescript-generics",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn ./src/interface.ts"
+  },
+  "keywords": [],
+  "author": "Andreas ziegler <a.ziegler2207@gmail.com>",
+  "license": "“MIT”",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  }
+}
