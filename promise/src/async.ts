@@ -12,7 +12,7 @@ fn.then((n) => console.log("valor de n: " + n));
 async function getUser(id: number): Promise<ResponseUser> {
   try {
     const resposta = await axios.get<ResponseUser>(
-      "http://localhost:3001/users" + id
+      "http://localhost:3001/users/" + id
     );
     console.log(resposta.data);
     return resposta.data;
@@ -20,7 +20,7 @@ async function getUser(id: number): Promise<ResponseUser> {
     throw new Error("Error: " + e.message);
   }
 }
-getUser(2)
+getUser(3)
   .then((dado) => {
     console.log("dado");
     console.log(dado);
