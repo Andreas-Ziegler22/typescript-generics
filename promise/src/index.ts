@@ -21,7 +21,7 @@ axios
     console.log(response.data.id);
   });
 const getUser = (id: number): Promise<AxiosResponse<ResponseUser>> => {
-  return axios.get("http://localhost:3001/users" + id);
+  return axios.get("http://localhost:3001/users/" + id);
 };
 
 console.log("getUser(4)");

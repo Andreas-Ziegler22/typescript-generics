@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { ResponseUser } from "./index";
 
 async function Fn(): Promise<number> {
@@ -17,7 +17,11 @@ async function getUser(id: number): Promise<ResponseUser> {
     console.log(resposta.data);
     return resposta.data;
   } catch (e) {
-    throw new Error("Error: " + e.message);
+    const errors = e as Error | AxiosError;
+    if (!axios.isAxiosError(e)) {
+      throw new Error("Error message: " + e);
+    }
+    throw new Error("Error message: " + e.message);
   }
 }
 getUser(3)
